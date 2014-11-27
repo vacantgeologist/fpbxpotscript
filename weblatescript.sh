@@ -18,6 +18,18 @@
 # Check on weblate commands necessary to make sure the weblate DB doesnt
 # get messed up when we generate, commit, and pull new files from git
 
+# Git preparation through Weblate's manage.py
+
+# Commit any uncommitted changes
+# /usr/local/bin/python2.7 manage.py commitgit --all
+
+# Push all commits
+# /usr/local/bin/python2.7 manage.py pushgit --all
+
+# Update all repositories
+# /usr/local/bin/python2.7 manage.py updategit --all
+
+
 # First, get the current directory and make it into a variable
 pwd=`dirname $(readlink -f $0)`
 cd $pwd
