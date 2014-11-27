@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# A simple script to revert pot files back to whatever is current in the master
+# branch of the module's git repository.
+
 dir=$(ls -d */)
 
 for i18ndirs in $dir
